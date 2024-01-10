@@ -1,0 +1,30 @@
+{
+  "app": {
+    "mode": "production",
+    "key": "asdasdasdasdasdasdasdasdasdasdas",
+    "languages": ["de", "en"],
+    "client": "https://cms.nidwalden.krisenkompass.ch/"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": "5050"
+  },
+  "database": {
+    "name": "lerugufu_krisenkompass",
+    "host": "lerugufu.mysql.db.internal",
+    "port": "3306",
+    "username": "lerugufu_kpass",
+    "password": "puLQDbNP5TE-gZnWymdc"
+  },
+  "mail": {
+    "fromName": "Krisencompass",
+    "fromEmail": "mail@krisenkompass.ch",
+    "smtpServer": "asmtp.mail.hostpoint.ch",
+    "smtpPort": "587",
+    "smtpSecurity": "tsl",
+    "smtpUsername": "mail@krisenkompass.ch",
+    "smtpPassword": "Qvoie5p!y=Wodm+sM21K",
+    "adminEmail": "info@krisenkompass.ch"
+  },
+  "services": {}
+}

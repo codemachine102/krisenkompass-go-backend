@@ -1,0 +1,93 @@
+{{define "content"}}
+<table border="0" cellpadding="0" cellspacing="0" class="heading_block" role="presentation"
+    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+    <tr>
+        <td style="width:100%;">
+            <h2
+                style="margin-bottom:8px; color: #e11b4b; direction: ltr; font-family: sans-serif; font-size: 24px; font-weight: normal; letter-spacing: normal; line-height: 150%; margin-top: 0;">
+                Ihre Bestellung und Ihr neu erstellter KRISENKOMPASS®
+            </h2>
+        </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-5" role="presentation"
+    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+    <tbody>
+        <tr>
+            <td>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="row-content stack"
+                    role="presentation"
+                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000;"
+                    width="680">
+                    <tbody>
+                        <tr>
+                            <th class="column"
+                                style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
+                                width="100%">
+                                <table border="0" cellpadding="0" cellspacing="0" class="text_block" role="presentation"
+                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; color: #000000; line-height: 1.4; font-family: sans-serif;"
+                                    width="100%">
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Vielen Dank für Ihre Bestellung des KRISENKOMPASS®!<br>Wir freuen uns
+                                                und sind überzeugt, dass Ihnen unser digitaler Wegweiser helfen wird,
+                                                Ihr Krisenmanagement zu optimieren und dabei Geld, Zeit und Ressourcen
+                                                zu sparen.
+                                            </p>
+                                            <p>
+                                                Folgende Organisation wurde für Sie automatisch erstellt:
+                                                <a href="https://cms.krisenkompass.ch/organization/{{.organizationID}}">
+                                                    {{.organizationName}}
+                                                </a>
+                                            </p>
+                                            <p>Falls Sie bereits ein KRISENKOMPASS® Benutzerkonto besitzen, können Sie
+                                                sich direkt einloggen.<br>
+                                                Falls Sie noch kein Konto besitzen, haben Sie eine zweite E-Mail
+                                                erhalten, um Ihr Konto zu verifizieren und ein Passwort festzulegen -
+                                                falls Sie diese nicht erhalten haben, prüfen Sie den SPAM Ordner oder
+                                                wenden Sie sich an support@krisenkompass.ch. Mit Ihrem Konto können Sie
+                                                sich dann in Ihren neu erstellten KRISENKOMPASS® einloggen.</p>
+                                            <p>
+                                                Ihr gewähltes Produkt: {{.plan}} <br>
+                                                Anzahl Einwohner: {{.population}} ({{.city}})
+                                            </p>
+                                            <p style="margin-top: 8px;">
+                                                {{.notes}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="font-weight: 700;">
+                                                Ihre Bestelldaten
+                                            </p>
+                                            <p>
+                                                Name: {{.name}}<br>
+                                                Funktion in der Gemeinde / Stadt / Region: {{.organizationRole}}<br>
+                                                Bestell-Gemeinde / Stadt: {{.organizationName}}<br>
+                                                Website: {{.website}}<br>
+                                                Email: {{.email}}<br>
+                                                Telefon: {{.phone}}<br>
+                                                Adresse: {{.address}}<br>
+                                                Rechnungsadresse: {{.invoiceAddress}}<br>
+                                            </p>
+                                            <p>
+                                                <strong>Sie erhalten in den nächsten Tagen eine Rechnung für das
+                                                    gewählte Produkt.</strong>
+                                                Bei Fragen oder Anliegen, kontaktieren Sie uns auf
+                                                support@krisenkompass.ch oder antworten Sie auf diese Nachricht.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{end}}
